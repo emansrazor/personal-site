@@ -1,0 +1,38 @@
+.Quotes {
+    font-family: 'Roboto Slab', georgia, serif;
+    font-size: 19px;
+    font-weight: 300;
+    height: unset;
+    line-height: 1.625rem;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 10% 0%;
+    width: 100%;
+    .display {
+        max-width: 45rem;
+        .Quote {
+            height: unset;
+            .author {
+                color: rgba(23, 24, 25, 0.75);
+                display: inline-block;
+                text-decoration: underline;
+                &:visited {
+                    color: rgba(23, 24, 25, 0.75);
+                }
+            }
+            .content {
+                margin: 0 1.2rem 1.5rem 1.2rem;
+                p {
+                    margin: 0.5rem 0;
+                    margin-bottom: .9rem;
+                }
+                hr {
+                    width: 41rem;
+                    opacity: .2;
+                }
+            }
+        }
+    }
+}
