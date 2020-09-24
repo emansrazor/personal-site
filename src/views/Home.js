@@ -1,7 +1,19 @@
 import React from 'react';
+import p5 from 'p5';
+
+new p5(s => {
+    s.setup = () => {
+        s.createCanvas(200, 200);
+    };
+
+    s.draw = () => {
+        s.background(0);
+    };
+}, 'sketch');
 
 const Home = () => ( 
     <div className="Home">
+        <div id="sketch"/>
         <div className="content">
             <h1 className="name">Emmanuel Z. Price</h1>
             <ul className="links">

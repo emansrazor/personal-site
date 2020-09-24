@@ -1,7 +1,12 @@
 .Home {
+    #sketch {
+        position: absolute;
+        z-index: -100;
+    }
     .content {
         display: flex;
         justify-content: center;
         align-items: center;
+        color: white;
     }
 }
