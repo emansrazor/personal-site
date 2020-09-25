@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600&display=swap');
 .Home {
     .content {
         position: fixed;
@@ -12,6 +13,7 @@
         border-radius: 5px;
         .name {
             font-size: 4em;
+            font-family: 'Source Sans Pro', sans-serif;
         }
         .links {
             padding: 0;

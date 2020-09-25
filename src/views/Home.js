@@ -17,7 +17,7 @@ new p5(s => {
         const cols = Math.floor(s.width / scale);
         const rows = Math.floor(s.height / scale);
         const terrain = Array.from(Array(rows), () => new Array(cols));
-        seed -= 0.01;
+        seed -= 0.015;
         let yoff = seed;
 
         for (let y = 0; y < rows; y++) {
