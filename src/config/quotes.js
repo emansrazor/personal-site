@@ -113,6 +113,9 @@ const quotes = {
     "Victor Frankl": [
         "Live as if you were living a second time, and as though you had acted wrongly the first time."
     ],
+    "Vladimir Nabokov": [
+        "This isms go, the ist dies–art remains."
+    ],
     "William Wordsworth": [
         "To begin, begin."
     ]

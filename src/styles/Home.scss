@@ -1,12 +1,24 @@
 .Home {
-    #sketch {
-        position: absolute;
-        z-index: -100;
-    }
     .content {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
         color: white;
+        margin: 30px;
+        padding: 40px;
+        background: black;
+        border-radius: 5px;
+        .name {
+            font-size: 4em;
+        }
+        .links {
+            padding: 0;
+            li {
+                display: inline-block;
+                margin-right: 5px;
+            }
+        }
     }
 }
