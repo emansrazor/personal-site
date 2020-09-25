@@ -8,7 +8,8 @@
         transform: translate(-50%, -50%);
         color: white;
         margin: 30px;
-        padding: 40px;
+        padding: 30px 40px;
+        padding-top: 25px;
         background: black;
         border-radius: 5px;
         .name {
@@ -16,10 +17,32 @@
             font-family: 'Source Sans Pro', sans-serif;
         }
         .links {
-            padding: 0;
-            li {
-                display: inline-block;
-                margin-right: 5px;
+            background: 0;
+            background: linear-gradient(90deg, black 0%, #272727 29%, #2f2f2f 53%, #757575 100%);
+            padding: 3px 15px;
+            overflow: hidden;
+            padding-bottom: 0px;
+            border-radius: 2px;
+            a {
+                display: block;
+                float: right;
+                text-decoration: none;
+                margin-left: 15px;
+                color: white;
+                &.quote-link {
+                    position: relative;
+                    top: 3px;
+                }
+                &.twitter-link {
+                    position: relative;
+                    top: 2px;
+                }
+                &:visited {
+                    color: white;
+                }
+                &:hover {
+                    color: black;
+                }
             }
         }
     }

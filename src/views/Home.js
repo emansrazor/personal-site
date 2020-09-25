@@ -1,11 +1,13 @@
 import React from 'react';
 import p5 from 'p5';
+import { Link } from 'react-router-dom'
+import { FaTwitter, FaQuoteRight, FaEye } from 'react-icons/fa';
+import { RiGitMergeFill } from 'react-icons/ri';
 import '../styles/Home.scss';
 
 new p5(s => {
     let seed = 0;
     let scale = 20;
-    let camera;
     s.setup = () => {
         s.createCanvas(200, 200, s.WEBGL);
         s.frameRate(25);
@@ -53,13 +55,42 @@ const Home = () => (
         <div id="sketch"/>
         <div className="content">
             <h1 className="name">Emmanuel Z. Price</h1>
-            <ul className="links">
-                <li>v</li>
-                <li>w</li>
-                <li>x</li>
-                <li>?</li>
-                <li>"</li>
-            </ul>
+            <div className="links">
+                <span className="description">
+                </span>
+                <a
+                    className="twitter-link"
+                    href="https://twitter.com/emansrazor"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                    title="twitter"
+                >
+                    <FaTwitter />
+                </a>
+                <a
+                    className="github-link"
+                    href="https://github.com/emansrazor"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                    title="github"
+                >
+                    <RiGitMergeFill size="19px"/>
+                </a>
+                <Link
+                    activeClassName="current"
+                    className="quote-link"
+                    to="/selected-quotes"
+                    title="selected quotes"
+                >
+                    <FaQuoteRight size="15px"/>
+                </Link>
+                <Link
+                    activeClassName="current"
+                    className="eye-link"
+                    to="/who-am-eye"
+                    title="who am eye"
+                ><FaEye size="19px"/></Link>
+            </div>
         </div>
     </div>
 );
