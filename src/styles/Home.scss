@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600&display=swap');
+body {
+    overflow: hidden;
+}
 .Home {
     .content {
         position: fixed;
@@ -23,15 +26,23 @@
             overflow: hidden;
             padding-bottom: 0px;
             border-radius: 2px;
+            .hovered {
+                font-family: 'Source Sans Pro', sans-serif;
+                font-style: italic;
+                color: #3f82ff;
+                font-weight: bold;
+            }
             a {
                 display: block;
+                width: 23px;
+                height: 22px;
                 float: right;
                 text-decoration: none;
                 margin-left: 15px;
                 color: white;
                 &.quote-link {
                     position: relative;
-                    top: 3px;
+                    top: 2px;
                 }
                 &.twitter-link {
                     position: relative;
