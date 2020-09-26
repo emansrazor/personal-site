@@ -64,7 +64,11 @@ const runSketch = () => {
 
 const Home = () => {
     const [hovered, setHovered] = useState("");
-    useEffect(runSketch, []);
+    useEffect(() => {
+        runSketch();
+        document.body.classList.add('no-scroll');
+        return () => document.body.classList.remove('no-scroll');
+    }, []);
     return (
         <div className="Home">
             <div id="sketch"/>
